@@ -279,3 +279,19 @@ Enumeration type variable listing possible outputs when handling functions that 
 Example:|
 |None|
 
+### *sRange_to_array*
+|sRange_to_array <br> (input_str)|
+|:----------------------------------------|
+|Description:|
+|User can provide either sinlge values separated with a comma, or provide limits of a range separated with a dash. Inserted data is then converted into an array.|
+|Input:|
+|**STRING `input_str`** &emsp; String that will be converted into an array.|
+|Output:|
+|**VARIANT `sRange_to_array`** &nbsp; Array of letters, numbers.|
+|None|
+|Return Code:|
+|None|
+|Remarks/Usage:|
+|None|
+|Example:|
+|None|
