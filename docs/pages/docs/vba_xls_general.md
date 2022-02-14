@@ -283,15 +283,50 @@ Example:|
 |sRange_to_array <br> (input_str)|
 |:----------------------------------------|
 |Description:|
-|User can provide either sinlge values separated with a comma, or provide limits of a range separated with a dash. Inserted data is then converted into an array.|
+|User can provide either single numeric values separated with a comma, or provide limits of a range separated with a dash. Inserted data is then converted into an array that function returns.|
 |Input:|
 |**STRING `input_str`** &emsp; String that will be converted into an array.|
 |Output:|
-|**VARIANT `sRange_to_array`** &nbsp; Array of letters, numbers.|
+|**VARIANT `sRange_to_array`** &nbsp; Array of data points that have been separated by comma, or range if dash has been used.|
 |None|
 |Return Code:|
 |None|
 |Remarks/Usage:|
 |None|
+|Example:|
+|None|
+
+### *a_remove_duplicates*
+|a_remove_duplicates <br> (input_arr)|
+|:----------------------------------------|
+|Description:|
+|Function removes duplicate entities from a 1 dimensional array.|
+|Input:|
+|**VARIANT `input_arr`** &emsp; Array that the duplicates will be removed from.|
+|Output:|
+|**VARIANT `a_remove_duplicates`** &nbsp; Array with removed duplicates.|
+|None|
+|Return Code:|
+|None|
+|Remarks/Usage:|
+|Function does not overwrite passed array, but returns a new one. Function supports 1 dimensional arrays only.|
+|Example:|
+|None|
+
+### *a_count_occurrence*
+|a_count_occurrence <br> (input_arr, item)|
+|:----------------------------------------|
+|Description:|
+|Function removes duplicate entities from a 1 dimensional array.|
+|Input:|
+|**VARIANT `input_arr`** &emsp; Input array that occurrences will be deleted from.|
+|**VARIANT `item`** &emsp; Variable that indicates what items should be removed.|
+|Output:|
+|**LONG `a_count_occurrence`** &nbsp; Number of `item` occurrence in `inpur_arr`.|
+|None|
+|Return Code:|
+|None|
+|Remarks/Usage:|
+|Function supports 1 dimensional arrays only.|
 |Example:|
 |None|
