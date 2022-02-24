@@ -330,3 +330,39 @@ Example:|
 |Function supports 1 dimensional arrays only.|
 |Example:|
 |None|
+
+### *append*
+|append <br> (input_arr, appendee)|
+|:----------------------------------------|
+|Description:|
+|Function adds variable `appendee` at the end of `input_arr`.|
+|Input:|
+|**VARIANT `input_arr`** &emsp; Input array that will be updated with next item.|
+|**VARIANT `appendee`** &emsp; Variable will be inserted at the end of the **`input_arr`**.|
+|Output:|
+|**VARIANT `append`** &nbsp; New array with updated items.|
+|None|
+|Return Code:|
+|None|
+|Remarks/Usage:|
+|**`appendee`** parameter should have the same number of dimensions as **`input_arr`**, otherwise function may prompt an error or return unexpected result.|
+|Example:|
+|None|
+
+### *a_contains*
+|a_contains <br> (input_arr, item)|
+|:----------------------------------------|
+|Description:|
+|Function loops through an array to check if **`item`** is stored in the vector.|
+|Input:|
+|**VARIANT `input_arr`** &emsp; Input array that will be looped through.|
+|**VARIANT `item`** &emsp; Variable that is being looked for in the **`input_arr`**.|
+|Output:|
+|**BOOLEAN `a_contains`** &nbsp; Function returns **`TRUE`** is the **`item`** has been found, **`FALSE`** if not.|
+|None|
+|Return Code:|
+|None|
+|Remarks/Usage:|
+|Function will return **`TRUE`** and finish iteration after first value that fulfills the condition is met. It will not return any additional information. <br> Function supports only one dimensional arrays. **`item`** variable is defined as **`VARIANT`** to simplify using the function, user has to parse the type he wants to evaluate by himself.|
+|Example:|
+|None|

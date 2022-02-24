@@ -41,6 +41,10 @@ nav:
       - Geometry: pages/docs/vba_femap_geometry.md
       - Materials : pages/docs/vba_femap_materials.md
       - Properties & Layups: pages/docs/vba_femap_property_en_layups.md
+    - Class Modules:
+        - cPoint: pages/docs/class-files/c_point.md
+        - cCurve: pages/docs/class-files/c_curve.md
+        - cSurface: pages/docs/class-files/c_surface.md
 
 
   - FAQ: pages/FAQ.md
