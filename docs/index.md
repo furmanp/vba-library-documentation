@@ -1,8 +1,12 @@
+---
+template: home.html
+---
+
 <p align="right"><img src=assets/logo.png></p>
 
 This document consist of list of all modules and methods that have been developed throughout the time to 
 help and improve efficiency of working with MS Excel, Femap, and other software. <br>
-All the code provided is in Visual Basic for Application. 
+All the code provided is in Visual Basic for Application.
 
 Contents of the file is divided into modules (which are organized in a manner of what they are mainly interacting with), next methods/functions are listed with further explanation and general use purpose.
 

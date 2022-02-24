@@ -1,6 +1,8 @@
 site_name: Pontis VBA Documentation
 theme:
   name: material
+  custom_dir: overrides
+
   features:
     - search.suggest
     - search.highlight
