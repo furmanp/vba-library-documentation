@@ -33,6 +33,34 @@
 |Example:|
 |None|
 
-### *femap_create_curve*
+### *femap_xls_draw_curves*
+|femap_xls_draw_curves <br> ()|
+|:----------------------------------------|
+|Description:|
+|Method aggregates data from the spreadsheet and creates curves in currently active Femap session. Appriopriate Excel data table is required for proper execution (See Remarks/Usage).<br> User is prompted with a dialog box to choose whether he wants to draw single/multiple set **`cset.id`** or curve **`cur.id`**.|
+|Input:|
+|Input values are read from the data table in spreadsheet.|
+|Output:|
+|None|
+|Return Code:|
+|None|
+|Remarks/Usage:|
+|Method is primarily looking for **`cset.id`** or **`cur.id`** keyword, from which it will build 2D data array. <br> **`set.nam`** & **`cur.nam`** are obsolete for Femap and serve only to indicate the user what the curves are referring to. **`cur.id`** parameter defines unique ID that curves will have assigned in Femap. If left empty, first available ID will be assigned to the curves.<br> **`x, y, z`** stand for coordinates of points that curve will be stretched between, provided in units defined in Femap session.<br> Design of the input table is critical for proper functioning of the method.<br> ![femap_xls_draw_curves.png](../../assets/pictures/femap_xls_draw_curves.png) <br> Method calls in **`femap_oGeo_draw_line, get_curve_id_dialog, a_base0, a_make, a_tidy, sRange_to_array, a_contains`**, and **`a_look`** functions.|
+|Example:|
+|None|
 
-### *femap_draw_curve*
+### *femap_xls_draw_surfs*
+|femap_xls_draw_surfs <br> ()|
+|:----------------------------------------|
+|Description:|
+|Method aggregates data from the spreadsheet and creates curves in currently active Femap session. Appriopriate Excel data table is required for proper execution (See Remarks/Usage).<br> User is prompted with a dialog box to choose whether he wants to draw single/multiple set **`cset.id`** or curve **`cur.id`**.|
+|Input:|
+|Input values are read from the data table in spreadsheet.|
+|Output:|
+|None|
+|Return Code:|
+|None|
+|Remarks/Usage:|
+|Method is primarily looking for **`cset.id`** or **`cur.id`** keyword, from which it will build 2D data array. <br> **`set.nam`** & **`cur.nam`** are obsolete for Femap and serve only to indicate the user what the curves are referring to. **`cur.id`** parameter defines unique ID that curves will have assigned in Femap. If left empty, first available ID will be assigned to the curves.<br> **`x, y, z`** stand for coordinates of points that curve will be stretched between, provided in units defined in Femap session.<br> Design of the input table is critical for proper functioning of the method.<br> ![femap_xls_draw_curves.png](../../assets/pictures/femap_xls_draw_curves.png) <br> Method calls in **`femap_oGeo_draw_line, get_curve_id_dialog, a_base0, a_make, a_tidy, sRange_to_array, a_contains`**, and **`a_look`** functions.|
+|Example:|
+|None|

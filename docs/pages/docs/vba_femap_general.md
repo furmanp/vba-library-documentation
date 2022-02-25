@@ -1,5 +1,10 @@
 # Femap/General
 
+Methods described on this page are used to interact with Siemens Femap from MS Excel environment.
+
+!!! note
+    These methods cannot be directly used in Siemens Femap API environment. 
+
 ##Mardkown styled table
 
 

@@ -38,7 +38,7 @@ nav:
     - pages/docs/index.md
     - Excel:
       - General: pages/docs/vba_xls_general.md
-    - Femap:
+    - XLS Femap:
       - General: pages/docs/vba_femap_general.md
       - Geometry: pages/docs/vba_femap_geometry.md
       - Materials : pages/docs/vba_femap_materials.md
