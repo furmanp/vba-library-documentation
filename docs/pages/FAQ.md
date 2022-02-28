@@ -1,6 +1,4 @@
-# FAQ
-
-## How to install library on my computer?
+# How to install library on my computer?
 To install the library go to <a href="https://github.com/furmanp/Pontis-VBA" target="_blank" rel="noopener">GitHub repository</a> and clone it to your local machine.
 You can either manually download the .zip file or if you have GitHub installed you can clone the repository via the app. This will allow you to update the project once new
 changes are introduced. 
@@ -9,7 +7,7 @@ This will provide access to your newly imported functions for all spreadsheets i
 To activate the library, open VBE in MS Excel and go to **`Tools/References`** and select VBAPROJECT unless you named it otherwise.
 
 
-## How to update the documentation?
+# How to update the documentation?
 To contribute to the documentation and add description of newly developed functions follow steps below.
 
 !!! note
