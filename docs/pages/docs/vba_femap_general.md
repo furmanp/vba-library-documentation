@@ -6,8 +6,6 @@ Methods described on this page are used to interact with Siemens Femap from MS E
     These methods cannot be directly used in Siemens Femap API environment. 
 
 ##Mardkown styled table
-
-
 | **xls_import_data**   <br> (ws_main, s_keyword)|   
 | :----------------------------------------------| 
 |Description:|
