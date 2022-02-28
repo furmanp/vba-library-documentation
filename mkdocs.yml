@@ -14,7 +14,6 @@ theme:
     - navigation.expand
   palette:
     accent: light blue
-
   font:
     text: Geogrotesque
   icon:
@@ -22,7 +21,6 @@ theme:
 
 plugins:
   - search
-#  - git-revision-date
 extra:
   social:
     - icon: fontawesome/brands/linkedin
@@ -30,7 +28,6 @@ extra:
     - icon: material/web
       link: https://www.pontis-engineering.com
   generator: false
-
 nav:
   - Home:
       - General information: index.md
