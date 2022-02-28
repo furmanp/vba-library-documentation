@@ -1,7 +1,5 @@
 # Getting Started
 
-Test for GitHub action deployment
-
 This document consist of list of all modules and methods that have been developed throughout the time to 
 help and improve efficiency of working with MS Excel, Femap, and other software. <br>
 All the code provided is in Visual Basic for Application.
