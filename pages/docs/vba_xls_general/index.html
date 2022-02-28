@@ -1,0 +1,2104 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.2.3">
+    
+    
+      
+        <title>General - Pontis VBA Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.e8d9bf0c.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.e6a45f82.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Geogrotesque:300,300i,400,400i,700,700i%7C:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Geogrotesque";--md-code-font:""}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="" data-md-color-accent="light-blue">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#excelgeneral" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Pontis VBA Documentation" class="md-header__button md-logo" aria-label="Pontis VBA Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Pontis VBA Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              General
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/furmanp/Pontis-VBA" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        Home
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../" class="md-tabs__link md-tabs__link--active">
+        Documentation
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../FAQ/" class="md-tabs__link">
+      FAQ
+    </a>
+  </li>
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Pontis VBA Documentation" class="md-nav__button md-logo" aria-label="Pontis VBA Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Pontis VBA Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/furmanp/Pontis-VBA" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1" data-md-state="indeterminate" type="checkbox" id="__nav_1" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_1">
+          Home
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Home" data-md-level="1">
+        <label class="md-nav__title" for="__nav_1">
+          <span class="md-nav__icon md-icon"></span>
+          Home
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        General information
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          Documentation
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Documentation" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Documentation
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        Getting Started
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2" type="checkbox" id="__nav_2_2" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_2">
+          Excel
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Excel" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_2">
+          <span class="md-nav__icon md-icon"></span>
+          Excel
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          General
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        General
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#enum-voutput" class="md-nav__link">
+    Enum vOutput
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#xls_import_data" class="md-nav__link">
+    xls_import_data
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a_base0" class="md-nav__link">
+    a_base0
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a_test" class="md-nav__link">
+    a_test
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a_paste" class="md-nav__link">
+    a_paste
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a_look" class="md-nav__link">
+    a_look
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a_make" class="md-nav__link">
+    a_make
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a_tidy" class="md-nav__link">
+    a_tidy
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#isvariantallocated" class="md-nav__link">
+    isVariantAllocated
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#xls_worksheetexists" class="md-nav__link">
+    xls_WorksheetExists
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#xls_fast" class="md-nav__link">
+    xls_fast
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#array_1dto2d" class="md-nav__link">
+    array_1Dto2D
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#xls_inputbox" class="md-nav__link">
+    xls_inputbox
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#xls_look" class="md-nav__link">
+    xls_look
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a_ndim" class="md-nav__link">
+    a_nDim
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a_2dto1d" class="md-nav__link">
+    a_2Dto1D
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a_len" class="md-nav__link">
+    a_len
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#srange_to_array" class="md-nav__link">
+    sRange_to_array
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a_remove_duplicates" class="md-nav__link">
+    a_remove_duplicates
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a_count_occurrence" class="md-nav__link">
+    a_count_occurrence
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#append" class="md-nav__link">
+    append
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a_contains" class="md-nav__link">
+    a_contains
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_3" data-md-state="indeterminate" type="checkbox" id="__nav_2_3" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_3">
+          XLS Femap
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="XLS Femap" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_3">
+          <span class="md-nav__icon md-icon"></span>
+          XLS Femap
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vba_femap_general/" class="md-nav__link">
+        General
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vba_femap_geometry/" class="md-nav__link">
+        Geometry
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vba_femap_materials/" class="md-nav__link">
+        Materials
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vba_femap_property_en_layups/" class="md-nav__link">
+        Properties & Layups
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_4" data-md-state="indeterminate" type="checkbox" id="__nav_2_4" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_4">
+          Class Modules
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Class Modules" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_4">
+          <span class="md-nav__icon md-icon"></span>
+          Class Modules
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../class-files/c_point/" class="md-nav__link">
+        cPoint
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../class-files/c_curve/" class="md-nav__link">
+        cCurve
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../class-files/c_surface/" class="md-nav__link">
+        cSurface
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../FAQ/" class="md-nav__link">
+        FAQ
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#enum-voutput" class="md-nav__link">
+    Enum vOutput
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#xls_import_data" class="md-nav__link">
+    xls_import_data
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a_base0" class="md-nav__link">
+    a_base0
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a_test" class="md-nav__link">
+    a_test
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a_paste" class="md-nav__link">
+    a_paste
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a_look" class="md-nav__link">
+    a_look
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a_make" class="md-nav__link">
+    a_make
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a_tidy" class="md-nav__link">
+    a_tidy
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#isvariantallocated" class="md-nav__link">
+    isVariantAllocated
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#xls_worksheetexists" class="md-nav__link">
+    xls_WorksheetExists
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#xls_fast" class="md-nav__link">
+    xls_fast
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#array_1dto2d" class="md-nav__link">
+    array_1Dto2D
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#xls_inputbox" class="md-nav__link">
+    xls_inputbox
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#xls_look" class="md-nav__link">
+    xls_look
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a_ndim" class="md-nav__link">
+    a_nDim
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a_2dto1d" class="md-nav__link">
+    a_2Dto1D
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a_len" class="md-nav__link">
+    a_len
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#srange_to_array" class="md-nav__link">
+    sRange_to_array
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a_remove_duplicates" class="md-nav__link">
+    a_remove_duplicates
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a_count_occurrence" class="md-nav__link">
+    a_count_occurrence
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#append" class="md-nav__link">
+    append
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a_contains" class="md-nav__link">
+    a_contains
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+
+<h1 id="excelgeneral">Excel/General</h1>
+<h3 id="enum-voutput"><em>Enum vOutput</em></h3>
+<p>Enumeration type variable listing possible outputs when handling functions that work with worksheet cells. <br></p>
+<ul>
+ <li> vAddress <br></li>
+ <li> vValue <br></li>
+ <li> vWidth <br></li>
+ <li> vLength <br></li>
+</ul>
+
+<h3 id="xls_import_data"><em>xls_import_data</em></h3>
+<table>
+<thead>
+<tr>
+<th align="left">xls_import_data <br> (ws_main, s_keyword)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Description:</td>
+</tr>
+<tr>
+<td align="left">Method to import data from chosen .xlsx file to main workbook. Data will be imported to sheet that is active while the method is being called. Cell <em>G2</em> will have a  full directory path of the imported file pasted.</td>
+</tr>
+<tr>
+<td align="left">Input:</td>
+</tr>
+<tr>
+<td align="left"><strong>STRING <code>ws_main</code></strong> &emsp; Name of the worksheet, in the Workbook the data is being imported from.</td>
+</tr>
+<tr>
+<td align="left"><strong>STRING <code>s_keyword</code></strong> &nbsp; Keyword that should indicate top right corner of the data that is to be imported.</td>
+</tr>
+<tr>
+<td align="left">Output:</td>
+</tr>
+<tr>
+<td align="left">None</td>
+</tr>
+<tr>
+<td align="left">Return Code:</td>
+</tr>
+<tr>
+<td align="left">None</td>
+</tr>
+<tr>
+<td align="left">Remarks/Usage:</td>
+</tr>
+<tr>
+<td align="left">It is recommended to use format with preceding dot and a number at the end <em>.data1</em> to avoid confusion with regularly used expressions. Method supports import of multiple tables, as long as they match the keyword <em>.data, .data1, .data2, .dataN</em>. First occurrence of the keyword does not need to have a number. <br> Method import_data is calling functions <strong><code>xls_look</code></strong>, <strong><code>a_make</code></strong>, <strong><code>a_paste</code></strong>, <strong><code>a_tidy</code></strong>, and <strong><code>WorksheetExists</code></strong> from the same module.</td>
+</tr>
+<tr>
+<td align="left">Example:</td>
+</tr>
+<tr>
+<td align="left">None</td>
+</tr>
+</tbody>
+</table>
+<h3 id="a_base0"><em>a_base0</em></h3>
+<table>
+<thead>
+<tr>
+<th align="left">a_base0 <br> (input_arr)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Description:</td>
+</tr>
+<tr>
+<td align="left">Function takes in array indexed from 1 and updates indexing to start from 0. Supports 1 dimensional arrays only.</td>
+</tr>
+<tr>
+<td align="left">Input:</td>
+</tr>
+<tr>
+<td align="left"><strong>VARIANT <code>input_arr</code></strong> &nbsp; Option Base 1 array to be updated to Option Base 0.</td>
+</tr>
+<tr>
+<td align="left">Output:</td>
+</tr>
+<tr>
+<td align="left"><strong>VARIANT <code>a_base0</code></strong> &emsp;&nbsp; Array with indexing starting from 0. No additional output arguments required.</td>
+</tr>
+<tr>
+<td align="left">Return Code:</td>
+</tr>
+<tr>
+<td align="left">None</td>
+</tr>
+<tr>
+<td align="left">Remarks/Usage:</td>
+</tr>
+<tr>
+<td align="left">None</td>
+</tr>
+<tr>
+<td align="left">Example:</td>
+</tr>
+<tr>
+<td align="left">None</td>
+</tr>
+</tbody>
+</table>
+<h3 id="a_test"><em>a_test</em></h3>
+<table>
+<thead>
+<tr>
+<th align="left">a_test <br> (input_arr)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Description:</td>
+</tr>
+<tr>
+<td align="left">Subroutine pastes passed array into worksheet called <em>test</em>. If the workbook exists, it replaces current content of the worksheet. If not, routine creates one.</td>
+</tr>
+<tr>
+<td align="left">Input:</td>
+</tr>
+<tr>
+<td align="left"><strong>VARIANT <code>input_arr</code></strong> &nbsp; Array that is pasted into cell B2, in <em>test</em> Worksheet.</td>
+</tr>
+<tr>
+<td align="left">Output:</td>
+</tr>
+<tr>
+<td align="left">None</td>
+</tr>
+<tr>
+<td align="left">Return Code:</td>
+</tr>
+<tr>
+<td align="left">None</td>
+</tr>
+<tr>
+<td align="left">Remarks/Usage:</td>
+</tr>
+<tr>
+<td align="left">None</td>
+</tr>
+<tr>
+<td align="left">Example:</td>
+</tr>
+<tr>
+<td align="left">None</td>
+</tr>
+</tbody>
+</table>
+<h3 id="a_paste"><em>a_paste</em></h3>
+<table>
+<thead>
+<tr>
+<th align="left">a_paste <br> (input_arr, paste_cell, offset_row, offset_col, wbook)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Description:</td>
+</tr>
+<tr>
+<td align="left">Soubroutine that pastes passed array into passed cell.</td>
+</tr>
+<tr>
+<td align="left">Input:</td>
+</tr>
+<tr>
+<td align="left"><strong>VARIANT <code>input_arr</code></strong> Array that subroutine will paste into defined cells.</td>
+</tr>
+<tr>
+<td align="left"><strong>STRING <code>paste_cell</code></strong> Destination cell where the data is going to be inserted to. Can be provided in format of absolute address (for example <em>A1</em>), or a keyword (<em>.data</em>).</td>
+</tr>
+<tr>
+<td align="left"><strong>INTEGER <code>[offset_row, offset_col]</code></strong> Values that define whether the data should be inserted in a found cell (default option), or offset. Default value is 0 (direct location).</td>
+</tr>
+<tr>
+<td align="left"><strong>WORKBOOK <code>[wbook]</code></strong> Allows to look for data in different workbooks to the active one. It will look for in active sheet though. Default value is ThisWorkbook.</td>
+</tr>
+<tr>
+<td align="left">Output:</td>
+</tr>
+<tr>
+<td align="left">None</td>
+</tr>
+<tr>
+<td align="left">Return Code:</td>
+</tr>
+<tr>
+<td align="left">None</td>
+</tr>
+<tr>
+<td align="left">Remarks/Usage:</td>
+</tr>
+<tr>
+<td align="left">Subroutine is calling in <strong><code>xls_look</code></strong> function.</td>
+</tr>
+<tr>
+<td align="left">Example:</td>
+</tr>
+<tr>
+<td align="left">None</td>
+</tr>
+</tbody>
+</table>
+<h3 id="a_look"><em>a_look</em></h3>
+<table>
+<thead>
+<tr>
+<th align="left">a_look <br> (s_keyword, input_arr, num)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Description:</td>
+</tr>
+<tr>
+<td align="left">Function looks for <strong><code>s_keyword</code></strong> in first row and column of <strong><code>input_arr</code></strong> and returns value defined by <strong><code>num</code></strong>.</td>
+</tr>
+<tr>
+<td align="left">Input:</td>
+</tr>
+<tr>
+<td align="left"><strong>VARIANT <code>s_keyword</code></strong> &nbsp; Keyword that is to be found in row/column header.</td>
+</tr>
+<tr>
+<td align="left"><strong>VARIANT <code>input_arr</code></strong> &nbsp; Array that the <strong><code>s_keyword</code></strong> is being looked in.</td>
+</tr>
+<tr>
+<td align="left"><strong>INTEGER <code>num</code></strong> &emsp;&emsp;&emsp;&ensp;Values [-1, 0, 1, 2, 3... n &lt; Ubound(input_arr)]</td>
+</tr>
+<tr>
+<td align="left">Output:</td>
+</tr>
+<tr>
+<td align="left"><strong>VARIANT <code>a_paste</code></strong>  &emsp;&ensp;Function returns accordingly:<br> <ul><li>-1; column/row index as INTEGER<br></li><li> 0; column/row index with preceding name (col/row) to indicate s_keyword location.<br></li><li> 1, 2, 3... n - value that is stored in cell 1, 2, 3... cells below/right to the s_keyword cell.</li></ul></td>
+</tr>
+<tr>
+<td align="left">Return Code:</td>
+</tr>
+<tr>
+<td align="left">None</td>
+</tr>
+<tr>
+<td align="left">Remarks/Usage:</td>
+</tr>
+<tr>
+<td align="left">Function is calling in a <strong><code>a_2Dto1D</code></strong> function.</td>
+</tr>
+<tr>
+<td align="left">Example:</td>
+</tr>
+<tr>
+<td align="left">None</td>
+</tr>
+</tbody>
+</table>
+<h3 id="a_make"><em>a_make</em></h3>
+<table>
+<thead>
+<tr>
+<th align="left">a_make <br> (s_keyword, n_down_start, n_right_start, n_down_end, n_right_end, wbook)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Description</td>
+</tr>
+<tr>
+<td align="left">Function sweeps active worksheet for s_keyword value.</td>
+</tr>
+<tr>
+<td align="left">Input:</td>
+</tr>
+<tr>
+<td align="left"><strong>STRING <code>s_keyword</code></strong> Keyword that is to be found in row/column header.</td>
+</tr>
+<tr>
+<td align="left"><strong>LONG <code>[n_down_start, n_right_start]</code></strong> Parameters define whether function should start from the s_keyword cell of cell adjacent offset down/right by passed value. Default value equals 0.</td>
+</tr>
+<tr>
+<td align="left"><strong>LONG <code>[n_down_end, n_right_end]</code></strong> Parameters define length/width of created matrix. If omitted, function will take entire table which represents combination of keys <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-shift">Shift</kbd><span>+</span><kbd class="key-arrow-down">Down</kbd></span></td>
+</tr>
+<tr>
+<td align="left">Output:</td>
+</tr>
+<tr>
+<td align="left"><strong>VARIANT <code>a_make</code></strong> 2 dimensional matrix of data that was stored in continuous chain of cells to the right and to the bottom of s_keyword cell, unless offsets were specified.</td>
+</tr>
+<tr>
+<td align="left">Return Code:</td>
+</tr>
+<tr>
+<td align="left">None</td>
+</tr>
+<tr>
+<td align="left">Remarks/Usage:</td>
+</tr>
+<tr>
+<td align="left">None</td>
+</tr>
+<tr>
+<td align="left">Example:</td>
+</tr>
+<tr>
+<td align="left">None</td>
+</tr>
+</tbody>
+</table>
+<h3 id="a_tidy"><em>a_tidy</em></h3>
+<table>
+<thead>
+<tr>
+<th align="left">a_tidy <br>()</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Description:</td>
+</tr>
+<tr>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">Input:</td>
+</tr>
+<tr>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">Output:</td>
+</tr>
+<tr>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">Return Code:</td>
+</tr>
+<tr>
+<td align="left">None</td>
+</tr>
+<tr>
+<td align="left">Remarks/Usage:</td>
+</tr>
+<tr>
+<td align="left">None</td>
+</tr>
+<tr>
+<td align="left">Example:</td>
+</tr>
+<tr>
+<td align="left">None</td>
+</tr>
+</tbody>
+</table>
+<h3 id="isvariantallocated"><em>isVariantAllocated</em></h3>
+<table>
+<thead>
+<tr>
+<th align="left">isVariantAllocated <br>()</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Description:</td>
+</tr>
+<tr>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">Input:</td>
+</tr>
+<tr>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">Output:</td>
+</tr>
+<tr>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">Return Code:</td>
+</tr>
+<tr>
+<td align="left">None</td>
+</tr>
+<tr>
+<td align="left">Remarks/Usage:</td>
+</tr>
+<tr>
+<td align="left">None</td>
+</tr>
+<tr>
+<td align="left">Example:</td>
+</tr>
+<tr>
+<td align="left">None</td>
+</tr>
+</tbody>
+</table>
+<h3 id="xls_worksheetexists"><em>xls_WorksheetExists</em></h3>
+<table>
+<thead>
+<tr>
+<th align="left">xls_WorksheetExists <br>(ws_name, wbook)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Description:</td>
+</tr>
+<tr>
+<td align="left">Function checks if worksheet with passed ws_name in declared workbook exists. If no wbook is declared, function will look in workbook that is calling the funcion.</td>
+</tr>
+<tr>
+<td align="left">Input:</td>
+</tr>
+<tr>
+<td align="left"><strong>STRING <code>ws_name</code></strong> &emsp;&emsp;&ensp; Name of the worksheet to be checked if exists.</td>
+</tr>
+<tr>
+<td align="left"><strong>WORKBOOK <code>[wbook]</code></strong> &nbsp; Workbook where the function should look for ws_name. Default value is <code>ThisWorkbook</code>.</td>
+</tr>
+<tr>
+<td align="left">Output:</td>
+</tr>
+<tr>
+<td align="left"><strong>BOOLEAN <code>xls_WorksheetExists</code></strong> &nbsp; Boolean statement. Returns <code>True</code> is Worksheet named ws_name exists, returns <code>False</code> otherwise.</td>
+</tr>
+<tr>
+<td align="left">Return Code:</td>
+</tr>
+<tr>
+<td align="left">None</td>
+</tr>
+<tr>
+<td align="left">Remarks/Usage:</td>
+</tr>
+<tr>
+<td align="left">None</td>
+</tr>
+<tr>
+<td align="left">Example:</td>
+</tr>
+<tr>
+<td align="left">None</td>
+</tr>
+</tbody>
+</table>
+<h3 id="xls_fast"><em>xls_fast</em></h3>
+<table>
+<thead>
+<tr>
+<th align="left">xls_fast <br>(status)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Description:</td>
+</tr>
+<tr>
+<td align="left">Subroutine to slightly improve Worksheets related macro efficiency. It turns off Screen Updating and calculation. It is recommended to set is back on at the end of the script.</td>
+</tr>
+<tr>
+<td align="left">Input:</td>
+</tr>
+<tr>
+<td align="left"><strong>BOOLEAN <code>[status]</code></strong> Variable to set the function on or off. If omitted, default value is True.</td>
+</tr>
+<tr>
+<td align="left">Output:</td>
+</tr>
+<tr>
+<td align="left">None</td>
+</tr>
+<tr>
+<td align="left">Return Code:</td>
+</tr>
+<tr>
+<td align="left">None</td>
+</tr>
+<tr>
+<td align="left">Remarks/Usage:</td>
+</tr>
+<tr>
+<td align="left">None</td>
+</tr>
+<tr>
+<td align="left">Example:</td>
+</tr>
+<tr>
+<td align="left">None</td>
+</tr>
+</tbody>
+</table>
+<h3 id="array_1dto2d"><em>array_1Dto2D</em></h3>
+<table>
+<thead>
+<tr>
+<th align="left">array_1Dto2D <br>(input_arr)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Description:</td>
+</tr>
+<tr>
+<td align="left">Function converts 1 dimensional array and allocates second dimension for each item. Returns 2 dimensional array.</td>
+</tr>
+<tr>
+<td align="left">Input:</td>
+</tr>
+<tr>
+<td align="left"><strong>VARIANT <code>input_arr</code></strong> &nbsp; 1 dimensional array that will have second dimension allocated.</td>
+</tr>
+<tr>
+<td align="left">Output:</td>
+</tr>
+<tr>
+<td align="left"><strong>VARIANT <code>array_1Dto2D</code></strong> 2 dimensional array. Second dimension is 1 element vector.</td>
+</tr>
+<tr>
+<td align="left">Return Code:</td>
+</tr>
+<tr>
+<td align="left">None</td>
+</tr>
+<tr>
+<td align="left">Remarks/Usage:</td>
+</tr>
+<tr>
+<td align="left">None</td>
+</tr>
+<tr>
+<td align="left">Example:</td>
+</tr>
+<tr>
+<td align="left">None</td>
+</tr>
+</tbody>
+</table>
+<h3 id="xls_inputbox"><em>xls_inputbox</em></h3>
+<table>
+<thead>
+<tr>
+<th align="left">xls_inputbox <br>()</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Description:</td>
+</tr>
+<tr>
+<td align="left">Function displays an InputBox asking for user input. User can provide either sinlge values separated with a comma, or provide limits of a range separated with a dash. Inserted data is then converted into an array.</td>
+</tr>
+<tr>
+<td align="left">Input:</td>
+</tr>
+<tr>
+<td align="left">No input variables required. User input is passed through an InputBox textfield.</td>
+</tr>
+<tr>
+<td align="left">Output:</td>
+</tr>
+<tr>
+<td align="left"><strong>VARIANT <code>xls_inputbox</code></strong> &nbsp; 2 dimensional vector of values read from input box.</td>
+</tr>
+<tr>
+<td align="left">Return Code:</td>
+</tr>
+<tr>
+<td align="left">None</td>
+</tr>
+<tr>
+<td align="left">Remarks/Usage:</td>
+</tr>
+<tr>
+<td align="left"><ul><li>Input: 1, 2, 3, 4, 5 -&gt; Output: array = (1, 2, 3, 4, 5) <br></li><li> Input: 1- 10 -&gt; Output: array = (1, 2, 3, 4... , 10) <br></li></ul>Negative ranges are supported.</td>
+</tr>
+<tr>
+<td align="left">Example:</td>
+</tr>
+<tr>
+<td align="left">None</td>
+</tr>
+</tbody>
+</table>
+<h3 id="xls_look"><em>xls_look</em></h3>
+<table>
+<thead>
+<tr>
+<th align="left">xls_look <br>(s_keyword, output, offset_down, offset_right, wbook)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Description:</td>
+</tr>
+<tr>
+<td align="left">Function sweeps active worksheet for s_keyword value. Returns data dependent on the input choice.</td>
+</tr>
+<tr>
+<td align="left">Input:</td>
+</tr>
+<tr>
+<td align="left"><strong>STRING <code>s_keyword</code></strong> &nbsp; Keyword that the function is looking for in the active worksheet.</td>
+</tr>
+<tr>
+<td align="left"><strong>vOutput <code>output</code></strong> &emsp;&emsp;Enumeration variable indicating what function should return. {<strong><code>vValue</code></strong>, <strong><code>vAddress</code></strong>, <strong><code>vLength</code></strong>, <strong><code>vWidth</code></strong>}</td>
+</tr>
+<tr>
+<td align="left"><strong>LONG <code>[offset_down, offset_right]</code></strong> Indicates whether function should return values offset from cell containing s_keyword. If omitted, function will return information about cell containing <strong><code>s_keyword</code></strong> (exact match).</td>
+</tr>
+<tr>
+<td align="left"><strong>WORKBOOK <code>[wbook]</code></strong> Allows to look for data in different workbooks to the active one. It will look for the value in active sheet though.</td>
+</tr>
+<tr>
+<td align="left">Output:</td>
+</tr>
+<tr>
+<td align="left"><strong>VARIANT <code>xls_look</code></strong> &emsp;Returned value depends on value chosen in output variable.</td>
+</tr>
+<tr>
+<td align="left">Return Code:</td>
+</tr>
+<tr>
+<td align="left">None</td>
+</tr>
+<tr>
+<td align="left">Remarks/Usage:</td>
+</tr>
+<tr>
+<td align="left">None</td>
+</tr>
+<tr>
+<td align="left">Example:</td>
+</tr>
+<tr>
+<td align="left">None</td>
+</tr>
+</tbody>
+</table>
+<h3 id="a_ndim"><em>a_nDim</em></h3>
+<table>
+<thead>
+<tr>
+<th align="left">a_nDim <br>(input_arr)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Description:</td>
+</tr>
+<tr>
+<td align="left">Function returns number of dimensions of input_arr that was passed on to the function. Returns a Long variable informing about number of dimensions.</td>
+</tr>
+<tr>
+<td align="left">Input:</td>
+</tr>
+<tr>
+<td align="left"><strong>VARIANT <code>input_arr</code></strong> &nbsp; Array that number of dimension will be calculated from.</td>
+</tr>
+<tr>
+<td align="left">Output:</td>
+</tr>
+<tr>
+<td align="left"><strong>LONG <code>a_nDim</code></strong> &emsp;&emsp;&emsp;&nbsp;Value that represents number of dimensions array has.</td>
+</tr>
+<tr>
+<td align="left">Return Code:</td>
+</tr>
+<tr>
+<td align="left">None</td>
+</tr>
+<tr>
+<td align="left">Remarks/Usage</td>
+</tr>
+<tr>
+<td align="left">None</td>
+</tr>
+<tr>
+<td align="left">Example:</td>
+</tr>
+<tr>
+<td align="left">None</td>
+</tr>
+</tbody>
+</table>
+<h3 id="a_2dto1d"><em>a_2Dto1D</em></h3>
+<table>
+<thead>
+<tr>
+<th align="left">a_2Dto1D <br>(input_arr, a_vector)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Description:</td>
+</tr>
+<tr>
+<td align="left">Function extracts single dimensional vector from 2 dimensional matrix.</td>
+</tr>
+<tr>
+<td align="left">Input:</td>
+</tr>
+<tr>
+<td align="left"><strong>VARIANT <code>input_arr</code></strong> &nbsp;2 dimensional matrix that row or column is to be extracted from.</td>
+</tr>
+<tr>
+<td align="left"><strong>STRING <code>a_vector</code></strong> &emsp;&nbsp; Keyword that indicated which row/column should be extracted from input_arr matrix. Syntax should look as follows: row1, col3.</td>
+</tr>
+<tr>
+<td align="left">Output:</td>
+</tr>
+<tr>
+<td align="left"><strong>VARIANT <code>a_2Dto1D</code></strong> &emsp; Single dimensional vector.</td>
+</tr>
+<tr>
+<td align="left">Return Code:</td>
+</tr>
+<tr>
+<td align="left">None</td>
+</tr>
+<tr>
+<td align="left">Remarks/Usage:</td>
+</tr>
+<tr>
+<td align="left"><strong><code>a_vector</code></strong> should indicate whether user wants to extract row or column and point at it's index (base1).<br> For example: row1, col3.</td>
+</tr>
+<tr>
+<td align="left">Example:</td>
+</tr>
+<tr>
+<td align="left">None</td>
+</tr>
+</tbody>
+</table>
+<h3 id="a_len"><em>a_len</em></h3>
+<table>
+<thead>
+<tr>
+<th align="left">a_len <br>(input_arr)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Description:</td>
+</tr>
+<tr>
+<td align="left">Function returns lenght of the array as <strong>Long</strong></td>
+</tr>
+<tr>
+<td align="left">Input:</td>
+</tr>
+<tr>
+<td align="left"><strong>VARIANT <code>input_arr</code></strong> &nbsp; Array that length will be returned</td>
+</tr>
+<tr>
+<td align="left">Output:</td>
+</tr>
+<tr>
+<td align="left"><strong>STRING <code>a_len</code></strong> Length of the array (first dimension only).</td>
+</tr>
+<tr>
+<td align="left">Return Code:</td>
+</tr>
+<tr>
+<td align="left">None</td>
+</tr>
+<tr>
+<td align="left">Remarks/Usage:</td>
+</tr>
+<tr>
+<td align="left">Indexing the array (base0, base1) does not affect the result. To calculate length of array's second dimension rin <strong><code>a_len(arr[1])</code></strong>.</td>
+</tr>
+<tr>
+<td align="left">Example:</td>
+</tr>
+<tr>
+<td align="left">None</td>
+</tr>
+</tbody>
+</table>
+<h3 id="srange_to_array"><em>sRange_to_array</em></h3>
+<table>
+<thead>
+<tr>
+<th align="left">sRange_to_array <br> (input_str)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Description:</td>
+</tr>
+<tr>
+<td align="left">User can provide either single numeric values separated with a comma, or provide limits of a range separated with a dash. Inserted data is then converted into an array that function returns.</td>
+</tr>
+<tr>
+<td align="left">Input:</td>
+</tr>
+<tr>
+<td align="left"><strong>STRING <code>input_str</code></strong> &emsp; String that will be converted into an array.</td>
+</tr>
+<tr>
+<td align="left">Output:</td>
+</tr>
+<tr>
+<td align="left"><strong>VARIANT <code>sRange_to_array</code></strong> &nbsp; Array of data points that have been separated by comma, or range if dash has been used.</td>
+</tr>
+<tr>
+<td align="left">None</td>
+</tr>
+<tr>
+<td align="left">Return Code:</td>
+</tr>
+<tr>
+<td align="left">None</td>
+</tr>
+<tr>
+<td align="left">Remarks/Usage:</td>
+</tr>
+<tr>
+<td align="left">None</td>
+</tr>
+<tr>
+<td align="left">Example:</td>
+</tr>
+<tr>
+<td align="left">None</td>
+</tr>
+</tbody>
+</table>
+<h3 id="a_remove_duplicates"><em>a_remove_duplicates</em></h3>
+<table>
+<thead>
+<tr>
+<th align="left">a_remove_duplicates <br> (input_arr)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Description:</td>
+</tr>
+<tr>
+<td align="left">Function removes duplicate entities from a 1 dimensional array.</td>
+</tr>
+<tr>
+<td align="left">Input:</td>
+</tr>
+<tr>
+<td align="left"><strong>VARIANT <code>input_arr</code></strong> &emsp; Array that the duplicates will be removed from.</td>
+</tr>
+<tr>
+<td align="left">Output:</td>
+</tr>
+<tr>
+<td align="left"><strong>VARIANT <code>a_remove_duplicates</code></strong> &nbsp; Array with removed duplicates.</td>
+</tr>
+<tr>
+<td align="left">None</td>
+</tr>
+<tr>
+<td align="left">Return Code:</td>
+</tr>
+<tr>
+<td align="left">None</td>
+</tr>
+<tr>
+<td align="left">Remarks/Usage:</td>
+</tr>
+<tr>
+<td align="left">Function does not overwrite passed array, but returns a new one. Function supports 1 dimensional arrays only.</td>
+</tr>
+<tr>
+<td align="left">Example:</td>
+</tr>
+<tr>
+<td align="left">None</td>
+</tr>
+</tbody>
+</table>
+<h3 id="a_count_occurrence"><em>a_count_occurrence</em></h3>
+<table>
+<thead>
+<tr>
+<th align="left">a_count_occurrence <br> (input_arr, item)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Description:</td>
+</tr>
+<tr>
+<td align="left">Function removes duplicate entities from a 1 dimensional array.</td>
+</tr>
+<tr>
+<td align="left">Input:</td>
+</tr>
+<tr>
+<td align="left"><strong>VARIANT <code>input_arr</code></strong> &emsp; Input array that occurrences will be deleted from.</td>
+</tr>
+<tr>
+<td align="left"><strong>VARIANT <code>item</code></strong> &emsp; Variable that indicates what items should be removed.</td>
+</tr>
+<tr>
+<td align="left">Output:</td>
+</tr>
+<tr>
+<td align="left"><strong>LONG <code>a_count_occurrence</code></strong> &nbsp; Number of <code>item</code> occurrence in <code>inpur_arr</code>.</td>
+</tr>
+<tr>
+<td align="left">None</td>
+</tr>
+<tr>
+<td align="left">Return Code:</td>
+</tr>
+<tr>
+<td align="left">None</td>
+</tr>
+<tr>
+<td align="left">Remarks/Usage:</td>
+</tr>
+<tr>
+<td align="left">Function supports 1 dimensional arrays only.</td>
+</tr>
+<tr>
+<td align="left">Example:</td>
+</tr>
+<tr>
+<td align="left">None</td>
+</tr>
+</tbody>
+</table>
+<h3 id="append"><em>append</em></h3>
+<table>
+<thead>
+<tr>
+<th align="left">append <br> (input_arr, appendee)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Description:</td>
+</tr>
+<tr>
+<td align="left">Function adds variable <code>appendee</code> at the end of <code>input_arr</code>.</td>
+</tr>
+<tr>
+<td align="left">Input:</td>
+</tr>
+<tr>
+<td align="left"><strong>VARIANT <code>input_arr</code></strong> &emsp; Input array that will be updated with next item.</td>
+</tr>
+<tr>
+<td align="left"><strong>VARIANT <code>appendee</code></strong> &emsp; Variable will be inserted at the end of the <strong><code>input_arr</code></strong>.</td>
+</tr>
+<tr>
+<td align="left">Output:</td>
+</tr>
+<tr>
+<td align="left"><strong>VARIANT <code>append</code></strong> &nbsp; New array with updated items.</td>
+</tr>
+<tr>
+<td align="left">None</td>
+</tr>
+<tr>
+<td align="left">Return Code:</td>
+</tr>
+<tr>
+<td align="left">None</td>
+</tr>
+<tr>
+<td align="left">Remarks/Usage:</td>
+</tr>
+<tr>
+<td align="left"><strong><code>appendee</code></strong> parameter should have the same number of dimensions as <strong><code>input_arr</code></strong>, otherwise function may prompt an error or return unexpected result.</td>
+</tr>
+<tr>
+<td align="left">Example:</td>
+</tr>
+<tr>
+<td align="left">None</td>
+</tr>
+</tbody>
+</table>
+<h3 id="a_contains"><em>a_contains</em></h3>
+<table>
+<thead>
+<tr>
+<th align="left">a_contains <br> (input_arr, item)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Description:</td>
+</tr>
+<tr>
+<td align="left">Function loops through an array to check if <strong><code>item</code></strong> is stored in the vector.</td>
+</tr>
+<tr>
+<td align="left">Input:</td>
+</tr>
+<tr>
+<td align="left"><strong>VARIANT <code>input_arr</code></strong> &emsp; Input array that will be looped through.</td>
+</tr>
+<tr>
+<td align="left"><strong>VARIANT <code>item</code></strong> &emsp; Variable that is being looked for in the <strong><code>input_arr</code></strong>.</td>
+</tr>
+<tr>
+<td align="left">Output:</td>
+</tr>
+<tr>
+<td align="left"><strong>BOOLEAN <code>a_contains</code></strong> &nbsp; Function returns <strong><code>TRUE</code></strong> is the <strong><code>item</code></strong> has been found, <strong><code>FALSE</code></strong> if not.</td>
+</tr>
+<tr>
+<td align="left">None</td>
+</tr>
+<tr>
+<td align="left">Return Code:</td>
+</tr>
+<tr>
+<td align="left">None</td>
+</tr>
+<tr>
+<td align="left">Remarks/Usage:</td>
+</tr>
+<tr>
+<td align="left">Function will return <strong><code>TRUE</code></strong> and finish iteration after first value that fulfills the condition is met. It will not return any additional information. <br> Function supports only one dimensional arrays. <strong><code>item</code></strong> variable is defined as <strong><code>VARIANT</code></strong> to simplify using the function, user has to parse the type he wants to evaluate by himself.</td>
+</tr>
+<tr>
+<td align="left">Example:</td>
+</tr>
+<tr>
+<td align="left">None</td>
+</tr>
+</tbody>
+</table>
+
+              
+            </article>
+          </div>
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" data-md-state="hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"/></svg>
+            Back to top
+          </a>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: Getting Started" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Getting Started
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../vba_femap_general/" class="md-footer__link md-footer__link--next" aria-label="Next: General" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              General
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+      
+      
+    
+    <a href="https://linkedin.com/company/pontis-engineering" target="_blank" rel="noopener" title="linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+    </a>
+  
+    
+    
+      
+      
+    
+    <a href="https://www.pontis-engineering.com" target="_blank" rel="noopener" title="www.pontis-engineering.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16.36 14c.08-.66.14-1.32.14-2 0-.68-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2m-5.15 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95a8.03 8.03 0 0 1-4.33 3.56M14.34 14H9.66c-.1-.66-.16-1.32-.16-2 0-.68.06-1.35.16-2h4.68c.09.65.16 1.32.16 2 0 .68-.07 1.34-.16 2M12 19.96c-.83-1.2-1.5-2.53-1.91-3.96h3.82c-.41 1.43-1.08 2.76-1.91 3.96M8 8H5.08A7.923 7.923 0 0 1 9.4 4.44C8.8 5.55 8.35 6.75 8 8m-2.92 8H8c.35 1.25.8 2.45 1.4 3.56A8.008 8.008 0 0 1 5.08 16m-.82-2C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2 0 .68.06 1.34.14 2M12 4.03c.83 1.2 1.5 2.54 1.91 3.97h-3.82c.41-1.43 1.08-2.77 1.91-3.97M18.92 8h-2.95a15.65 15.65 0 0 0-1.38-3.56c1.84.63 3.37 1.9 4.33 3.56M12 2C6.47 2 2 6.5 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["search.suggest", "search.highlight", "content.tabs.link", "content.code.annotate", "navigation.tabs", "navigation.sections", "navigation.top", "navigation.expand"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../assets/javascripts/workers/search.bd0b6b67.min.js"}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.b88e97c5.min.js"></script>
+      
+    
+  </body>
+</html>
